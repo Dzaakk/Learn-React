@@ -18,3 +18,8 @@ function greetUser(userName, message = "Hello!") {
 
 greetUser("Max");
 console.log(greetUser("Bob", "What's up?"));
+
+export default (userName, message) => {
+    console.log('Hello');
+    return userName + message;
+}
