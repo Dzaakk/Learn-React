@@ -81,5 +81,12 @@ const { name: userName, age } = {
 console.log(userName);
 console.log(age);
 
+function storeOrder(order) {
+    localStorage.setItem('id', order.id);
+    localStorage.setItem('currency', order.currency);
+}
 
-
+function storeOrder({ id, currency }) { // destructuring
+    localStorage.setItem('id', id);
+    localStorage.setItem('currency', currency);
+}
