@@ -2,7 +2,6 @@
 // import  apiKey  from "./util.js";
 // import { abc, apiKey } from "./util.js";
 // import * as util from "./util.js";
-
 // import { abc as content } from "./util.js";
 // console.log(content);
 
@@ -91,21 +90,39 @@
 //     localStorage.setItem('currency', currency);
 // }
 
+// const hobbies = ["Sports", "Coding"]
+// const user = {
+//     name: "Steve",
+//     age: 20
+// }
+
+// const newHobbies = ["Reading"]
+
+// const mergedHobbies = [...hobbies, ...newHobbies]
+
+// console.log(mergedHobbies);
+
+// const extendedUser = {
+//     isAdmin: false,
+//     ...user
+// }
+
+// console.log(extendedUser);
+
+const password = prompt("Your password");
+
+if (password === "Hello") {
+    console.log("Hello works");
+} else if (password === "hello") {
+    console.log("hello works");
+} else {
+    console.log("Invalid password");
+}
+
+
 const hobbies = ["Sports", "Coding"]
-const user = {
-    name: "Steve",
-    age: 20
+
+for (const hobby of hobbies) {
+    console.log(hobby);
+
 }
-
-const newHobbies = ["Reading"]
-
-const mergedHobbies = [...hobbies, ...newHobbies]
-
-console.log(mergedHobbies);
-
-const extendedUser = {
-    isAdmin: false,
-    ...user
-}
-
-console.log(extendedUser);
