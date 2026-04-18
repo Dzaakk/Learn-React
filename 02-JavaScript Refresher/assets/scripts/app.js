@@ -50,21 +50,36 @@
 // console.log(user1);
 // user1.greet();
 
-const hobbies = ["Sports", "Coding", "Reading"]
-console.log(hobbies[0]);
+// const hobbies = ["Sports", "Coding", "Reading"]
+// console.log(hobbies[0]);
 
-hobbies.push("Archery")
-console.log(hobbies);
+// hobbies.push("Archery")
+// console.log(hobbies);
 
-const index = hobbies.findIndex((item) => item === "Archery")
+// const index = hobbies.findIndex((item) => item === "Archery")
 
-console.log(index)
+// console.log(index)
 
-const editedHobbies = hobbies.map((item) => item + "!")
+// const editedHobbies = hobbies.map((item) => item + "!")
 
-console.log(editedHobbies)
+// console.log(editedHobbies)
 
-const objectHobbies = hobbies.map((item) => ({ text: item }))
+// const objectHobbies = hobbies.map((item) => ({ text: item }))
 
-console.log(objectHobbies)
+// console.log(objectHobbies)
+
+const [firstName, lastName] = ["Valentino", "Bob"]
+
+console.log(firstName);
+console.log(lastName);
+
+const { name: userName, age } = {
+    name: "Steve",
+    age: 20
+}
+
+console.log(userName);
+console.log(age);
+
+
 
