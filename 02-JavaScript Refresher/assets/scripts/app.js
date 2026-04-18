@@ -109,20 +109,22 @@
 
 // console.log(extendedUser);
 
-const password = prompt("Your password");
+// const password = prompt("Your password");
 
-if (password === "Hello") {
-    console.log("Hello works");
-} else if (password === "hello") {
-    console.log("hello works");
-} else {
-    console.log("Invalid password");
-}
+// if (password === "Hello") {
+//     console.log("Hello works");
+// } else if (password === "hello") {
+//     console.log("hello works");
+// } else {
+//     console.log("Invalid password");
+// }
 
+// const hobbies = ["Sports", "Coding"]
 
-const hobbies = ["Sports", "Coding"]
+// for (const hobby of hobbies) {
+//     console.log(hobby);
 
-for (const hobby of hobbies) {
-    console.log(hobby);
+// }
 
-}
+const list = document.querySelector("ul")
+list.remove();
