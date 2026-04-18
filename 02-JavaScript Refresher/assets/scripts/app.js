@@ -68,25 +68,44 @@
 
 // console.log(objectHobbies)
 
-const [firstName, lastName] = ["Valentino", "Bob"]
+// const [firstName, lastName] = ["Valentino", "Bob"]
 
-console.log(firstName);
-console.log(lastName);
+// console.log(firstName);
+// console.log(lastName);
 
-const { name: userName, age } = {
+// const { name: userName, age } = {
+//     name: "Steve",
+//     age: 20
+// }
+
+// console.log(userName);
+// console.log(age);
+
+// function storeOrder(order) {
+//     localStorage.setItem('id', order.id);
+//     localStorage.setItem('currency', order.currency);
+// }
+
+// function storeOrder({ id, currency }) { // destructuring
+//     localStorage.setItem('id', id);
+//     localStorage.setItem('currency', currency);
+// }
+
+const hobbies = ["Sports", "Coding"]
+const user = {
     name: "Steve",
     age: 20
 }
 
-console.log(userName);
-console.log(age);
+const newHobbies = ["Reading"]
 
-function storeOrder(order) {
-    localStorage.setItem('id', order.id);
-    localStorage.setItem('currency', order.currency);
+const mergedHobbies = [...hobbies, ...newHobbies]
+
+console.log(mergedHobbies);
+
+const extendedUser = {
+    isAdmin: false,
+    ...user
 }
 
-function storeOrder({ id, currency }) { // destructuring
-    localStorage.setItem('id', id);
-    localStorage.setItem('currency', currency);
-}
+console.log(extendedUser);
