@@ -3,7 +3,7 @@ export default function Player({ name, symbol }) {
     const [isEditing, setIsediting] = useState(false);
 
     function handleEditClick() {
-        setIsediting(!isEditing);
+        setIsediting(editing => !editing); // schedules a state update 
     }
 
     let playerName = <span className="player-name">{name}</span>
